@@ -4,7 +4,7 @@
  * main - A program that prints a line with a puts function
  * Return: Always 0 (Success)
  */
-iint main(void)
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
