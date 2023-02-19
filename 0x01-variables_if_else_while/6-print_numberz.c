@@ -11,5 +11,6 @@ int d;
 for (d = 'o'; d <= '9'; d++)
 putchar(d);
 putchar('\n');
+
 return (0);
 }
