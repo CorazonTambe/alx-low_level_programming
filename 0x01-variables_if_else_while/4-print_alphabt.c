@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdtime.h>
+
+/**
+ * main - Entry point
+ * Return: Always (Success)
+ */
+int main(void)
+
+{
+
+	char low, e, q;
+
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; <= 'z'; low++)
+	{
+	if (low != e && low != q)
+	putchar(low);
+	}
+	putchar('\n');
+	return (0);
+
+}
