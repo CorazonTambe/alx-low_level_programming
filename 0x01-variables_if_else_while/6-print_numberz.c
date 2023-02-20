@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * Description: prints char below 10
+ * Description: prints char below from 9 and below
  * Return: Always 0 (Success)
  */
 int main(void)
