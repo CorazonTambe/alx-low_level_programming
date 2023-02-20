@@ -3,14 +3,16 @@
 
 /**
  * main - Entry point
+ * Description: prints char below 10
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int d;
-for (d = 'o'; d <= '9'; d++)
-putchar(d);
+int a;
+for (a = '0'; a <= 10; a++)
+{
+putchar(a + '0');
+}
 putchar('\n');
-
 return (0);
 }
