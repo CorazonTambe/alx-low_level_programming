@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * Description: prints all possible comnination of 2-digit numbers
@@ -15,7 +16,7 @@ for (k = 48; k <= 57; k++)
 {
 for (j = 48; j <= 57; j++)
 {
-if (((k + j) > (c + i) && k > c) || c < k)
+if (((k + j) > (c + i) && k >= c) || c < k)
 {
 putchar(c);
 putchar(i);
