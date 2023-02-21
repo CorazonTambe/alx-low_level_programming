@@ -1,25 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
+ * Description: prints two digits combination
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-int d, p;
-for (d = '0'; d < '9'; d++)
+int c, i;
+for (c = '0'; c <= '9'; c++)
 {
-for (p = d + 1; p <= '9'; p++)
+for (i = '0'; i <= '9'; i++)
 {
-if (p != d)
+if (c < i)
 {
-putchar(d);
-putchar(p);
-if (d == '8' && p == '9')
+putchar(c);
+putchar(i);
+if (c != '8' || (c == '8' && i != '9'))
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
