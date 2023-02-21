@@ -8,7 +8,6 @@
 
 int main(void)
 {
-
 int d, p;
 for (d = '0'; d < '9'; d++)
 {
@@ -26,5 +25,4 @@ putchar(' ');
 }
 putchar('\n');
 return (0);
-
 }
