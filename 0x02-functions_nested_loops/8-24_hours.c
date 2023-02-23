@@ -1,12 +1,10 @@
 #include "main.h"
 /**
- * jack_ bauer -  print every minute of the day of jack bauer
- * Description: starting from 00:00 to 23:59
+ * Main - Entry point
+ * Description: print every minute of the day of jack bauer
  * Return: Always 0
  */
-
 void jack_bauer(void)
-
 {
 int a, b, c, d;
 for (a = 0; a <= 2; a++)
