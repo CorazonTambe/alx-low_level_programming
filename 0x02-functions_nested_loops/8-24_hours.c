@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * Main - Entry point
+ * main - Entry point
  * Description: print every minute of the day of jack bauer
  * Return: Always 0
  */
-void jack_bauer(void)
+int main (void)
 {
 int a, b, c, d;
 for (a = 0; a <= 2; a++)
