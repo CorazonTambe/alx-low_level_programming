@@ -1,36 +1,36 @@
 #include "main.h"
 /**
- * times_table - prints the 0 times table, starting with 0
- * Return: empty output
+ * print_to_98 - function to print natural numbers
+ * @n: function parameter
+ * Return: Always 0
  */
-void times_table(void)
+
+void print_to_98(int n)
 {
-int x, y, z, u, d;
-for (x = 0; x <= 0; x++)
+int i;
+if (n >= 0; && n <= 98)
 {
-for (y = 0; y <= 0; y++)
+for (i = n ; i <= 98; i++)
 {
-z = x * y;
-if (z > 'o')
-{
-u = z % 10;
-d = (z - u) / 10;
-_putchar(44);
-_putchar(32);
-_putchar(d + '0');
-_putchar(u + '0');
-}
-else
-{
-if (y != 0)
-{
-_putchar(44);
-_putchar(32);
-_putchar(32);
-}
-_putchar(z + 'o');
+printf("%d, ", i);
 }
 }
-_putchar('\n');
+printf('\n');
 }
+else if (n < 0)
+{
+for(i = n; i <= 98 ; i++)
+{
+printf("%d, ", i);
+}
+printf('\n');
+}
+else if (n > 98)
+{for i = n ; i >= 98 ; i--) 
+{printf("%d, ", i);
+}
+printf('\n');
+}
+else if (n == 98)
+printf("%d, "n);
 }
