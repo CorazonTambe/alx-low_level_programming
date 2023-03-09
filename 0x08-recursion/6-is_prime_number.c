@@ -1,22 +1,34 @@
 #include "main.h"
 
 /**
- * primeFinder - searches for if a number is prime
- *
- * @a: the number to check
- * @b: the numbers we'll go through
- *
- * Return: Whether or not the number is a prime number
+ * is_prime - detects if an input number is a prime number.
+ * @n: input number.
+ * @c: iterator.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
  */
-
-int primeFinder(int a, int b)
+int is_prime(unsigned int n, unsigned int c)
 {
-	if (a <= 1 || a % b == 0)
+	if (n % c == 0)
+	{
+		if (n == c)
+			return (1);
+		else
+			return (0);
+	}
+	return (0 + is_prime(n, c + 1));
+}
+/**
+ * is_prime_number - detects if an input number is a prime number.
+ * @n: input number.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ */
+int is_prime_number(int n)
+{
+	if (n == 0)
 		return (0);
-	else if (a == b)
-		return (1);
-	else if (a > b)
-		primeFinder(a, b + 1);
-
-	return (1);
+	if (n < 0)
+		return (0);
+	if (n == 1)
+		return (0);
+	return (is_prime(n, 2));
 }
