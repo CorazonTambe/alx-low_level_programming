@@ -1,30 +1,23 @@
 #include "main.h"
-#include "2-strlen.c"
-
+#include <stdio.h>
 /**
- * _strcpy - function declaration
- * @dest: destination to copy
- * @src: source to copy
- * Return: destination
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
-
-char *_strcpy(char *dest, char *src);
-
-/**
- * _strcpy - function declaration
- * Description: copies a string
- * @dest: destination to copy to
- * @src: source to copy from
- * Return: destination
- */
-
 char *_strcpy(char *dest, char *src)
 {
-	int index;
+	int count = 0;
 
-	for (index = 0; index <= _strlen(src); index++)
+	while (count >= 0)
 	{
-		dest[index] = src[index];
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
 	}
 	return (dest);
 }
